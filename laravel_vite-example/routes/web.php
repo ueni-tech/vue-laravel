@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// localhost:8000以下のURLが何であってもapp.blade.phpを返すようする
+Route::get('/{any?}', fn () => view('app'))->where('any', '.+');
