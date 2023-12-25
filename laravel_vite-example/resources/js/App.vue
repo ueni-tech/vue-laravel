@@ -1,13 +1,12 @@
 <template>
-  <div class="page">
-    <p>{{ counter }}</p>
-    <button @click="counter += 1">
-      click!
-    </button>
-  </div>
+  <v-app>
+    <TopHeader></TopHeader>
+    <v-main>
+      <router-view></router-view>
+    </v-main>
+  </v-app>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const counter = ref(0)
+import TopHeader from './TopHeader.vue';
 </script>
