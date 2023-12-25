@@ -8,5 +8,5 @@
 </template>
 
 <script setup>
-import TopHeader from './TopHeader.vue';
+import TopHeader from "../views/TopHeader.vue";
 </script>
